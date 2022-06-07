@@ -1,0 +1,88 @@
+**************************************************
+* PROGRAMMED BY : JJ David & Nikki Navid
+* STUDENT ID    : 1083135 & 1074622
+* CLASS         : CS1A - TTh 1pm-4:20pm
+* LAB #26       : Enumerated Types
+**************************************************
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? d
+
+*** INVALID INPUT - Please input a W, S, U, F or X ***
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? w
+
+For winter, you might want to try a Kishu Mini Mandarin.
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? u
+
+For summer, you might want to try a Lane Navel Orange.
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? S
+
+For spring, you might want to try a Blood Orange.
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? g
+
+*** INVALID INPUT - Please input a W, S, U, F or X ***
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? F
+
+For fall, you might want to try a Star Ruby Red Grapefruit.
+
+********************
+  FRUIT SELECTOR
+********************
+(W) Winter
+(S) Spring
+(U) Summer
+(F) Fall
+(X) Exit
+What season is it? x

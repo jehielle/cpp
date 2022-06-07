@@ -1,0 +1,33 @@
+******************************************************
+*  PROGRAMMED BY : JJ David & Nathan Smith
+*  STUDENT ID    : 1083135 & 387089
+*  CLASS         : CS1A TTh - 1pm
+*  LAB #25       : Array Train - Set #2
+******************************************************
+Enter name (enter 'done' to exit): Zack
+Enter age: 20
+Enter name (enter 'done' to exit): Nikki
+Enter age: 19
+Enter name (enter 'done' to exit): Justice
+Enter age: 18
+Enter name (enter 'done' to exit): Gunner
+Enter age: 20
+Enter name (enter 'done' to exit): Billy
+Enter age: 19
+Enter name (enter 'done' to exit): Chris
+Enter age: 32
+Enter name (enter 'done' to exit): James Pelligra
+Enter age: 21
+Enter name (enter 'done' to exit): James Packes
+Enter age: 21
+Enter name (enter 'done' to exit): done
+
+          NAME          AGE
+
+         Nikki           19
+       Justice           18
+        Gunner           20
+         Billy           19
+         Chris           32
+James Pelligra           21
+  James Packes           21

@@ -1,0 +1,41 @@
+******************************************************
+*  PROGRAMMED BY : JJ David & Justice Flenniken
+*  STUDENT ID    : 1083135 & 1071976
+*  CLASS         : CS1A TTh - 1pm
+*  LAB #25       : Array Train - Set #1
+******************************************************
+What age do you want to search for? 20
+Who do you want to search for? Zack
+
+21.25 is the average age.
+Zack is the first instance of the age 20.
+There are 2 instances of the age 20.
+Zack is present on this list.
+Chris is the oldest.
+Justice is the youngest.
+170 is the sum of all the ages.
+
+
+
+What age do you want to search for? 21
+Who do you want to search for? James Packes
+
+21.25 is the average age.
+James Pelligo is the first instance of the age 21.
+There are 2 instances of the age 21.
+James Packes is present on this list.
+Chris is the oldest.
+Justice is the youngest.
+170 is the sum of all the ages.
+
+
+
+What age do you want to search for? 780
+Who do you want to search for? Michele
+
+21.25 is the average age.
+There are no instances of the age 780.
+Michele is not present on this list.
+Chris is the oldest.
+Justice is the youngest.
+170 is the sum of all the ages.

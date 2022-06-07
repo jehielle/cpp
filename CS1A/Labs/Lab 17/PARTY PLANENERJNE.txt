@@ -1,0 +1,302 @@
+/***************************************************************************
+ * AUTHORS    : JJ David & James Packes
+ * STUDENT ID : 1083135 & 1072934
+ * LAB #17    : Flo's Party Planner
+ * CLASS      : CS1A
+ * SECTION    : TTH: 1pm
+ * DUE DATE   : 10/24/17
+ ***************************************************************************/
+
+#include <iostream>
+#include <iomanip>
+#include <cstring>
+using namespace std;
+
+/***************************************************************************
+ * This program will calculate whether or not the guest is of the drinking age,
+ * as well as whether or not the guest will receive Skittles, M&M's or Peanut
+ * M&Ms, depending on their preferences.
+ *----------------------------------------------------------------------------
+ * INPUT:
+ *       name          : the guest's name
+ *       chocolatePref : whether or not the guest likes chocolate
+ *       nutPref       : whether or not the guest likes nuts
+ * OUTPUT:
+ *       snackPref     : The guests snack preference
+ *       drinkPref     : The guests drink preference
+ ***************************************************************************/
+
+int main()
+{
+
+	/***********************************************************************
+	 * CONSTANTS
+	 * ----------------------------------------------------------------------
+	 * OUTPUT - USED FOR CLASS HEADING
+	 * ----------------------------------------------------------------------
+	 * PROGRAMMER      : Programmer's Name
+	 * CLASS           : Student's Course
+	 * SECTION         : Class Days and Times
+	 * LAB_NUM         : Lab Number (specific to this lab)
+	 * LAB_NAME        : Title of the Lab
+	 * ---------------------------------------------------------------------
+	 * USED FOR FORMATTING
+	 * ---------------------------------------------------------------------
+	 * INPUT_COLUMN    : the length of the input column
+	 * NAME_LENGTH     : the guests' max name length
+	 * BAGS_COLUMN     : the set width for the bags column
+	 * SNACK_COLUMN    : the set width for the snack column
+	 * SERVING_COLUMN1 : the number of total servings snacks
+	 * SERVING_COLUMN2 : the number of total servings for drinks
+	 * ---------------------------------------------------------------------
+	 * USED FOR CALCULATIONS IN FOR LOOP
+	 * ---------------------------------------------------------------------
+	 * END_LOOP     : ends the loop
+	 ***********************************************************************/
+
+	const char PROGRAMMER[]       = "JJ David & James Packes";
+    const char CLASS[]            = "CS1A";
+    const char SECTION[]          = "TTH: 1:00p - 4:20p";
+    const int  LAB_NUM            = 17;
+    const char LAB_NAME[]         = "Flo's Party Planner";
+
+    const int  INPUT_COLUMN       = 30;
+    const int  NAME_LENGTH        = 25;
+    const int  END_LOOP			  = 12;
+    const int  BAGS_COLUMN		  = 9;
+    const int  SNACK_COLUMN	      = 14;
+    const int  SERVING_COLUMN1    = 2;
+	const int  SERVING_COLUMN2    = 3;
+
+    int  guestCount;			// CALC & OUT    - counts the number of guests
+    char name[NAME_LENGTH];     // IN & OUT      - the guests' name
+    char chocolatePref;         // IN, CALC, OUT - if guest likes chocolate
+    char nutPref;               // IN, CALC, OUT - if guest likes nuts
+    int  age;                   // IN, CALC, OUT - guest's age
+    char snackPref[NAME_LENGTH];// CALC & OUT    - snack preference
+    char drinkPref[NAME_LENGTH];// CALC & OUT    - drink type
+
+    int  serveNonChoco;			// CALC & OUT    - counts non-choco servings
+    int  serveChoco;			// CALC & OUT    - counts choco servings
+    int  serveChocoAndNuts; 	// CALC & OUT    - counts choco w/ nuts servings
+    int  serveJuice;			// CALC & OUT    - counts juice servings
+    int  serveSoda;				// CALC & OUT    - counts soda servings
+    int  serveWine;				// CALC & OUT    - counts wine servings
+
+    int  bagChoco;				// CALC & OUT    - counts choco bags
+    int  bagNonChoco;			// CALC & OUT    - counts non-choco bags
+    int  bagChocoAndNuts;		// CALC & OUT    - counts choco and nuts bags
+    int  caseWine;				// CALC & OUT    - counts wine cases
+    int  caseSoda;				// CALC & OUT    - counts soda cases
+    int  caseJuice;				// CALC & OUT    - counts juice cases
+
+    // OUTPUT - Class Heading
+    cout << left;
+    cout << "*************************************************\n";
+    cout << "* PROGRAMMED BY : "  << PROGRAMMER << endl;
+    cout << "* "      << setw(14) << "CLASS"    << ": " << CLASS    << endl;
+    cout << "* "      << setw(14) << "SECTION"  << ": " << SECTION  << endl;
+    cout << "* LAB #" << setw(9)  << LAB_NUM    << ": " << LAB_NAME << endl;
+    cout << "*************************************************\n\n";
+
+    // OUTPUT - Actual Lab
+
+    cout << "\tWelcome Florence! Please input your guest\'s names, ages, and "
+    		"preferences!" << endl << endl;
+
+   /***************************************************************************
+    * INPUT - The user inputs the guest's name, age, chocolate preference, and
+	* nut preference.
+	* -------------------------------------------------------------------------
+    * PROCESSING - Calculates what snacks and drinks will be distributed to the
+    * guests.
+    **************************************************************************/
+
+    serveNonChoco     = 0;
+    serveChocoAndNuts = 0;
+    serveChoco        = 0;
+    serveWine         = 0;
+    serveJuice        = 0;
+    serveSoda         = 0;
+
+    for (guestCount = 1; guestCount <= END_LOOP; guestCount = guestCount + 1)
+    {
+
+    cout << "\tGuest #" << guestCount << ":" << endl;
+
+    cout << setw(INPUT_COLUMN) << "\tWhat is your friend\'s name?";
+    cin.getline(name, NAME_LENGTH);
+
+    cout << setw(INPUT_COLUMN) << "\tHow old is your friend?";
+    cin  >> age;
+    cin.ignore(10000, '\n');
+
+    cout << setw(INPUT_COLUMN) << "\tDo you like chocolate (Y/N)?";
+    cin.get(chocolatePref);
+    chocolatePref =(toupper(chocolatePref));
+    cin.ignore(10000, '\n');
+
+    // IF THEN ELSE STATEMENTS FOR SNACKS
+
+    if (chocolatePref == 'N')
+    {
+       strncpy(snackPref, "Skittles", NAME_LENGTH);
+       serveNonChoco = serveNonChoco + 1;
+    }
+
+    else
+    {
+       cout << setw(INPUT_COLUMN) << "\tDo they like nuts (Y/N)?";
+       cin.get(nutPref);
+       nutPref =(toupper(nutPref));
+       cin.ignore(10000, '\n');
+
+       if (nutPref == 'Y')
+       {
+    	   strncpy(snackPref, "Peanut M & M\'s", NAME_LENGTH);
+    	   serveChocoAndNuts = serveChocoAndNuts + 1;
+       }
+
+       else
+       {
+    	   strncpy(snackPref, "M & M\'s", NAME_LENGTH);
+    	   serveChoco = serveChoco + 1;
+       }
+    }
+
+    // IF THEN ELSE STATEMENT FOR DRINKS
+
+    if (age >= 21)
+    {
+       strncpy(drinkPref, "wine", NAME_LENGTH);
+       serveWine = serveWine + 3;
+    }
+
+    else
+    {
+       if (age <= 5)
+       {
+    	   strncpy(drinkPref, "juice", NAME_LENGTH);
+    	   serveJuice = serveJuice + 3;
+       }
+       else
+       {
+    	   strncpy(drinkPref, "soda", NAME_LENGTH);
+    	   serveSoda = serveSoda + 3;
+       }
+    }
+
+    cout << endl;
+
+    cout << "\tYou should serve " << name << ' ' << snackPref <<" and "
+         << drinkPref             << '.';
+
+    // PROCESSING - Calculates number of bags and cases
+
+    bagNonChoco     = serveNonChoco / 4;
+    bagChoco        = serveChoco / 4;
+    bagChocoAndNuts = serveChocoAndNuts / 4;
+
+    caseWine  = serveWine / 6;
+    caseSoda  = serveSoda / 6;
+    caseJuice = serveJuice / 6;
+
+    if((serveChoco % 4) > 0)
+    {
+    	bagChoco = bagChoco + 1;
+    }
+
+    if((serveNonChoco % 4) > 0)
+    {
+       	bagNonChoco = bagNonChoco + 1;
+    }
+
+    if((serveChocoAndNuts % 4) > 0)
+    {
+       	bagChocoAndNuts = bagChocoAndNuts + 1;
+    }
+
+    if((serveWine % 6) > 0)
+    {
+    	caseWine = caseWine + 1;
+    }
+
+    if((serveSoda % 6) > 0)
+    {
+    	caseSoda = caseSoda + 1;
+    }
+
+    if((serveJuice % 6) > 0)
+    {
+    	caseJuice = caseJuice + 1;
+    }
+
+    cout << endl << endl << endl;
+
+    } // end for loop
+
+    /**************************************************************************
+     * OUTPUT - Displays the user's name and table including their snack and
+     * drink preferences.
+     **************************************************************************/
+
+    cout << endl;
+
+    cout << "\tThere are:"    << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN1) << serveNonChoco << "servings of Skittles"
+    	 << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN1) << serveChoco    << "servings of M & M\'s"
+    	 << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN1) << serveChocoAndNuts
+    	 << "servings of Peanut M & M\'s" << endl  << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN2) << serveSoda     << "servings of soda"
+    	 << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN2) << serveJuice	   << "servings of juice"
+    	 << endl;
+    cout << "\t";
+    cout << setw(SERVING_COLUMN2) << serveWine	   << "servings of wine";
+    cout << endl << endl << endl;
+
+    cout << "\tFlorence needs to purchase:" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << "BAGS"
+    		     << setw(SNACK_COLUMN) << "SNACK" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << "----"
+    			 <<	setw(SNACK_COLUMN) << "-----" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << bagNonChoco
+        		 <<	setw(SNACK_COLUMN) << "Skittles" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << bagChoco
+        	     << setw(SNACK_COLUMN) << "M & M\'s" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << bagChocoAndNuts
+        		 <<	setw(SNACK_COLUMN) << "Peanut M & M\'s" << endl << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << "CASES"
+    		     << setw(SNACK_COLUMN) << "BEVERAGE" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << "----"
+    		     << setw(SNACK_COLUMN) << "-----" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << caseJuice
+        	     << setw(SNACK_COLUMN) << "Juice" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << caseSoda
+        		 << setw(SNACK_COLUMN) << "Soda" << endl;
+
+    cout << "\t" << setw(BAGS_COLUMN)  << caseWine
+        	     << setw(SNACK_COLUMN) << "Wine" << endl;
+
+    cout << right;
+
+
+
+    return 0;
+}

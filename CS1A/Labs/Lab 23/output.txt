@@ -1,0 +1,57 @@
+******************************************************
+* PROGRAMMED BY : JJ David, Nina Brock
+*  STUDENT ID    : 1083135, 378941
+*  CLASS         : CS1A TTh - 1pm
+*  LAB #23       : Functions - Rock Paper Scissors
+******************************************************
+Enter Player's Name: Andrew Daniels
+Enter Number of Rounds in Match: 3
+
+*********************
+** CHOOSE YOUR PLAY **
+*********************
+R - Rock
+P - Paper
+S - Scissors
+Enter your play: r
+
+Andrew Daniels chooses ROCK!
+Computer chooses SCISSORS!
+
+Andrew Daniels WINS!!
+
+
+*********************
+** CHOOSE YOUR PLAY **
+*********************
+R - Rock
+P - Paper
+S - Scissors
+Enter your play: s
+
+Andrew Daniels chooses SCISSORS!
+Computer chooses SCISSORS!
+
+Computer wins, better luck next time, Andrew Daniels!
+
+
+*********************
+** CHOOSE YOUR PLAY **
+*********************
+R - Rock
+P - Paper
+S - Scissors
+Enter your play: p
+
+Andrew Daniels chooses PAPER!
+Computer chooses ROCK!
+
+Andrew Daniels WINS!!
+
+
+***********************************
+********** FINAL RESULTS **********
+***********************************
+
+Andrew Daniels is the WINNER, WINNER, CHICKEN DINNER!!
+Andrew Daniels won 67% of the time!

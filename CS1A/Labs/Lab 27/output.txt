@@ -1,0 +1,30 @@
+******************************************************
+*  PROGRAMMED BY : JJ David & Negin Mashhadi
+*  STUDENT ID    : 1083135  & 1084104
+*  CLASS         : CS1A TTh - 1pm
+*  LAB #26       : Multidimensional Arrays - Movie Ratings
+******************************************************
+**************************************
+* MOVIE STARS - RATING ANALYSIS TOOL *
+**************************************
+
+The average rating given by each reviewer is...
+Reviewer #1 gave an average of 6.0 stars.
+Reviewer #2 gave an average of 6.4 stars.
+Reviewer #3 gave an average of 5.6 stars.
+Reviewer #4 gave an average of 5.8 stars.
+
+
+The average stars for each movie is...
+Movie #1 earned 3.8 stars!
+Movie #2 earned 4.8 stars!
+Movie #3 earned 7.5 stars!
+Movie #4 earned 7.0 stars!
+Movie #5 earned 6.8 stars!
+
+The winner is (drum roll please)...
+Movie #3 with 7.5 stars!!
+
+
+The highest rating given to any movie is 9 stars!
+The lowest rating given to any movie is 2 stars!

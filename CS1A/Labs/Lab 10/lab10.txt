@@ -1,0 +1,28 @@
+***************************************************
+* PROGRAMMED BY : JJ David & Leo Sanchez
+* CLASS         :  CS1A
+* SECTION       :  TTh: 1:00p - 2:50p
+* LAB #10       :  Intro to Programming
+***************************************************
+
+Enter the first integer:  32
+Enter the second integer:  41
+
+
+32 + 41 = 73
+
+
+
+Enter the first integer:  24
+Enter the second integer:  1258
+
+
+24 + 1258 = 1282
+
+
+
+Enter the first integer:  34
+Enter the second integer:  563
+
+
+34 + 563 = 597
