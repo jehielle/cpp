@@ -1,0 +1,4 @@
+all:
+	g++ hw06.cpp hw06.h -o makefile
+tar:
+	tar -cvf ///hw06.tar /
