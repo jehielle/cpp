@@ -1,0 +1,50 @@
+OTHER IMPORTANT TOPICS:
+
+-------------------------------------------------------------------------------------
+SETFILL:
+
+cout << setfill('*');             <-- sets all blank spaces to *
+
+cout << setw(5) << "hi";
+
+cout << setfill(' ');              <-- sets all blank spaces BACK to blank spaces
+
+PRODUCES THE FOLLOWING:
+
+***hi
+
+-------------------------------------------------------------------------------------
+
+OSTRINGSTREAM:
+
+#include<sstream>
+
+string PrintHeader(..........)
+{
+  ostring stream outStr;
+  outStr << setw()........
+
+   return outStr.str();
+}
+
+(( myoss.str(); converts it to string ))
+
+-------------------------------------------------------------------------------------
+
+CHECKING FOR VALID INPUTS:
+
+int command;
+
+if(!(cin >> command))
+{
+   cout << "Please enter a number from 0 - 5: ";
+   cin.clear();
+   cin.ignore(numeric_limits<streamsize>::max(), '\n');
+   invalid = true;
+}
+
+^^^ The extraction operator expects numbers when entering a command. When a value of datatype char is entered, the compiler goes into fail-safe mode.
+
+#1 - need to get it out of fail-safe (reset fail-safe) using cin.clear()
+
+#2 - numeric_limits<streamsize>::max() helps us find the largest stream for the input buffer, because the buffer size for each computer is system-dependent. you can also use "min" instead of "max" to find the smallest stream.
