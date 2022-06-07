@@ -1,0 +1,11 @@
+command prompt
+
+cd Desktop             <-- takes you to the stuff inside Desktop
+g++ -o clock clock.cpp <-- this creates "clock"
+clock                  <-- lets u run the clock.cpp file
+
+OR
+
+cd linkToTheFile
+g++ filename.cpp
+a
