@@ -1,0 +1,84 @@
+A
+Star Wars
+0345260791
+George Lucas
+A
+The Empire Strikes Back (Star Wars)
+034529209
+George Lucas
+A
+Splinter of the Mind's Eye (Star Wars)
+0345320239
+George Lucas
+A
+Return of the Jedi (Star Wars)
+0345307674
+George Lucas
+A
+Heir to the Empire (Star Wars: The Thrawn Trilogy, Vol. 1)
+0553296124
+Timothy Zahn
+A
+Dark Force Rising (Star Wars: The Thrawn Trilogy, Vol. 2)
+0553560719
+Timothy Zahn
+A
+The Last Command (Star Wars: The Thrawn Trilogy)
+0553564927
+Timothy Zahn
+A
+Specter of the Past (Star Wars: The Hand of Thrawn #1)
+0553298046
+Timothy Zahn
+A
+Vision of the Future (Star Wars: The Hand of Thrawn, Book 2)
+0553578790
+Timothy Zahn
+A
+Battlestar Galactica
+185286088
+Glen A.;Thurston, Robert Larson
+A
+New Battlestar Galactica Volume 1 (Battlestar Galactica (Dynamite)) (v. 1)
+1933305339
+Diamond Comic Distributors Inc.
+A
+New Battlestar Galactica Volume II Hardcover (Battlestar Galactica (Dynamite)) 
+1933305533
+Greg Pak
+A
+The Hobbit
+0618968636
+J.R.R. Tolkien
+A
+The Lord of the Rings: 50th Anniversary, One Vol. Edition
+0618645616
+J.R.R. Tolkien
+A
+The Two Towers
+0395489334
+J.R.R. Tolkien
+A
+The Return of the King
+039548930
+J.R.R. Tolkien
+A
+The Fellowship of the Ring
+0395489318
+J.R.R. Tolkien
+A
+C++ Programming: From Problem Analysis to Program Design 7th Edition
+1285852745
+D.S. Malik
+A
+Digital Computer Electronics
+0074622358
+Malvino
+A
+Assembly Language for x86 Processors (7th Edition)
+0133769402
+Irvin, K.R.
+A
+The Tainted Sword
+1560763957
+Watry, D.J.
